@@ -19,6 +19,14 @@ import Login from "./Login";
     onChange = event handler used primarily with the form elements 
                 ex. <input>, <textarea>, <select>, <radio>
                 Triggers a function every time the value of the input changes.
+
+    updater function = Function that allows the modification of the stateful variable
+                       in the Virtual DOM.
+                       A function passed as an argument to setState() usually 
+                       ex. setYear(arrow function)
+                       Allow for safe updates based on the previous state 
+                       Used with multiple state updates and synchronous functions
+                       Good practice to user updater function instead of the state variable
 */
 function App() {
   return (
